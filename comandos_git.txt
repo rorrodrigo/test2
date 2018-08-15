@@ -1,0 +1,35 @@
+Descargar y Actualizar estado local
+ git clone <url> (Clonar un repositorio, nuestro caso desde Gitea)
+ git status (Ver el estado del repositorio)
+ git add <archivo> (Agregar un archivo para un “Commit”)
+ git commit -m “<mensaje>” (Crear el Commit)
+ git checkout -- <archivo> (ignorar los cambios hechos desde el ultimo
+commit)
+
+Manejo del branch(rama)
+ git branch <nombre_branch> (Crear un nuevo branch)
+ git checkout <branch> (Cambiarse de branch)
+ git merge --no-ff <branch_origen> (Traer y juntar cambios desde un branch a
+                                    otro, deben estar en el branch al cual
+                                    quieren traer los cambios)
+ git branch -d <branch name>(borrar branch
+
+ Comunicación con el host
+  git push origin <branch> (Subir los cambios al branch en Gitea)
+  git pull origin <branch> (Traer cambios desde el branch en Gitea)
+  git fetch (Se trae los branch desde Gitea)
+
+  Manejo de stash
+ git stash(limpia los archivos al estado del ultimo commit, manteniendo el
+           trabajo realizado).
+ git stash list(lista los stash en stack)
+ git stash show [-p] <stash@N>(muestra las diferencias con el stash,[-p lo
+                              muestra como codigo])
+ git stash apply <stash@N>(reincorpora los datos del stash, manteniendolo
+                           en el stack)
+ git stash pop <stash@N>(reincorpora los datos del stash borrandolo stack)
+
+ .gitignore
+ Permite a git ignorar otros archivos. No le importa que estos archivos
+cambien o no.
+ Al subirlos a un host (Gitea), los archivos no se suben.
