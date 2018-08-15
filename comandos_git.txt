@@ -1,3 +1,5 @@
+Recordatorio comandos Git.
+
 Descargar y Actualizar estado local
  git clone <url> (Clonar un repositorio, nuestro caso desde Gitea)
  git status (Ver el estado del repositorio)
